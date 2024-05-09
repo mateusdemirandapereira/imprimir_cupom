@@ -4,7 +4,7 @@ use real_bingo;
 delete from cupons;
 drop table if exists cupons;
 create table if not exists cupons (
-	codigo int not null primary key auto_increment,
+    codigo int not null primary key auto_increment,
     pedido int not null check (pedido > 0) unique,
     data date not null,
     valor numeric(8,2) not null check(valor > 0),
@@ -40,8 +40,7 @@ create table if not exists usuarios(
     tipo tinyint not null default 0
 );
 
-insert into usuarios(nome, snome, email, senha, tipo) values("mateus de miranda pereirea", "mateus", "mateus.pereira@shoppingreal.net", "123", 1);
-insert into usuarios(nome, snome, email, senha, tipo) values("teste henrique", "teste", "rian.teste@shoppingreal.net", "123", 0);
+
 
 select * from cuponsClientes;
 delete from cuponsClientes;
