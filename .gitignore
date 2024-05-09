@@ -1,0 +1,8 @@
+# pasta node modules
+node_modules
+
+# pasta que o netbens cria
+nbproject
+
+# arquivo configs.json
+configs.json
